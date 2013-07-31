@@ -28,6 +28,21 @@ How to Use
 
  python myvardiff.py --config example.my.cnf --before variables.json
 
+
+Quick RUN
+----------------------------
+
+You can use ``<(printf 'CONFIG')`` instead of config file.
+
+::
+
+ python myvardump.py --config <(printf '[DEFAULT]\nhost=localhost\nuser=root\npassword=') --out tmp/test.json
+ python myvardiff.py --config <(printf '[DEFAULT]\nhost=localhost\nuser=root\npassword=') --before tmp/test.json
+
+
+
+
+
 Note
 ----------------------------
 This program was inspired by myprofiler( https://github.com/methane/myprofiler )
