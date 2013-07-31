@@ -1,0 +1,5 @@
+[DEFAULT]
+host = localhost
+# socket = 
+user = root
+password = 
